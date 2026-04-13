@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>用户登录</title>
+  </head>
+  <body>
+    <h2>用户登录</h2>
+    <form action="/register" method="post">
+      <div>
+        <label for="username">账号:</label>
+        <input
+          type="text"
+          name="username"
+          placeholder="请输入账号"
+          id="username"
+          required
+        />
+      </div>
+      <div>
+        <label for="pwd">密码:</label>
+        <input type="password" placeholder="请输入密码" id="pwd" required />
+      </div>
+      <div>
+        性别:
+        <input type="radio" name="gender" value="male" id="male" />
+        <label for="male">男</label>
+        <input type="radio" name="gender" value="female" id="female" />
+        <label for="female">女</label>
+        <input type="radio" name="gender" value="secrecy" id="secrecy" />
+        <label for="secrecy">保密</label>
+      </div>
+      <div>
+        <input type="checkbox" id="agree" required />
+        <label for="agree">我已阅读并同意协议<a href="#">用户协议</a>"</label>
+      </div>
+      <div>
+        <input type="submit" value="登录" />
+        <button type="button">
+          <a href="https://cn.bing.com/?mkt=zh-CN" style="color: black"
+            >找回账号</a
+          ><!后续学会了再继续做下去>
+        </button>
+        <button type="button">
+          <a href="https://www.baidu.com/" style="color: black">注册账号</a>
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
